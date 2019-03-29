@@ -1,7 +1,13 @@
 #include<stdio.h>
 int main()
 {
-	int a=1,b=2,c;
-	c=a+b;
-	printf("sum = %d",c);
+	int a,b,sum=1;
+	scanf("%d %d",&a,&b);
+	a=a+b;
+	while(sum)
+	{
+		scanf("%d",&b);
+		a += b;
+	}
+	printf("sum = %d",a);
 }
