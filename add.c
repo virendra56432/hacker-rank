@@ -1,13 +1,14 @@
 #include<stdio.h>
 int main()
 {
-	int a,b,sum=1;
-	scanf("%d %d",&a,&b);
-	a=a+b;
-	while(sum)
+	int a,sum=0,n,i;
+	printf("How much no you want to add : ");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
 	{
-		scanf("%d",&b);
-		a += b;
+		printf("Enter Number : ");
+		scanf("%d",&a);
+		sum += a;
 	}
-	printf("sum = %d",a);
+	printf("sum = %d",sum);
 }
