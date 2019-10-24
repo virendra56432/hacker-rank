@@ -1,14 +1,13 @@
 #include<stdio.h>
 int main()
 {
-	int a,b=1;
-	scanf("%d %d",&a,&b);
-	a=a+b;
-	printf("Enter 0 when Want to Show Total Sum of All No.\n");
-	while(b)
+	int a,sum=0;
+	printf("Enter your Number As long as you want to add if you want total sum then enter 0 \n");
+	while(a)
 	{
-		scanf("%d",&b);
-		a += b;
+		scanf("%d",&a);
+		sum=sum+a;
 	}
-	printf("sum = %d",a);
+	
+	printf("sum = %d",sum);
 }
